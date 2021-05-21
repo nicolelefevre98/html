@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+@media screen and (max-width 780px) {
+
+}
+
+body {
+  margin: 0;
+  /* background-color: ##1C1A1D;*/
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background-image: url(img/background.png);
+  background-color: #000000;
+  height: 1000px;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Eget logo */
+.logo {
+  display: block;
+  margin-top: auto;
+  height: 150px;
+  width: 260px;
+  float: left;
+}
+
+/* Header */
+/* Header er et semantisk tag. Margin er distancen, så hvis man sætter margin på 5 er der større mellemrum */
+header {
+  position: absolute;
+    width: 100%;
+}
+/* Container er måden den kommer i en container og der kommer mellemrum ude i siderne */
+.header-container{
+  width: 100%;
+  margin: auto;
+}
+
+
+
+/* navigation liste øverst, Padding - Clears an area around the content. The padding is transparent  */
+nav ul{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+/* nav li er stilen i headeren. feks størrelsen og float gør at teksten er højre stillet */
+nav li{
+  margin: auto;
+  padding: 5px;
+  float: right;
+}
+
+
+/* nav a er stilen på knapperne i header, padding gør at området man kan klikke på omkring navigationen er større */
+nav a{
+  color:#CB9771;
+  font-weight: 700;
+  font-size: 20px;
+  /*display: inline;*/
+  font-family: "Poppins";
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 40px;
+}
+
+
+
+/* active er den side man befinder sig på, så den viser i navigationen hvor du er  */
+.active{
+  font-weight: bold;
+  color: #A57048;
+}
+
+/* Hover er den farve knappen skifter til, når den markeres med en mus  */
+nav a:hover,
+nav a:focus {
+  color: #A57048;
+}
+
+
+/* Typografi */
+.overskrift{
+  padding: 1em;
+  color: #CB9771;
+  font-size: 45px;
+  display: block;
+  text-align: right;
+}
+/* Størrelsen på den viste skærm i overskrift (responsive) */
+@media (min-width: 10rem){
+  .overskrift {
+    font-size: 50px;
+  }
+}
+
+
+
+/* Velkommen til min online portfolio */
+.quote{
+  margin: auto;
+  color:#CB9771;
+  font-size: 40px;
+  display: block;
+  text-align: center;
+  padding: 4.5em;
+}
+
+
+/* Container til paragraf delen*/
+.text-container{
+  width: 90%;
+  margin: auto;
+  background-color: #CB9771;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Paragraph tekst "om mig" */
+p{
+  margin: auto;
+  color:#1C1A1D;
+  font-size: 20px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding: 3em;
+}
+
+
+
+/* Knappen til at downloade mit CV */
+.text-container button{
+  width: 160px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-color: #A57048;
+  font-family: Poppins;
+  outline: none;
+  margin: 0px, 10px;
+}
+
+.download{
+  background-color: #CB9771;
+  border: none;
+  position: fixed;
+}
+
+.download:hover,
+.download:focus {
+  color: #A57048;
+}
+
+.portfolio{
+  height: 600px;
+  background-color:
+}
+
+.box1,.box2,.box3{
+  width: 300px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.box-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 65px;
+}
+
+.box1{
+  background-image: url("img/premierepro.png");
+  background-size: 100%;
+}
+
+.box2{
+  background-image: url("img/photoshop.png");
+  background-size: 100%;
+}
+
+.box3{
+  background-image: url("img/illustrator.png");
+  background-size: 100%;
+}
+
+/* Alle billeder, så de alle er samme størrelse */
+img{
+  margin: 5em;
+  max-width: 100%;
+  height: 500px;
+  width: 750px;
+  float: center;
+}
+
+/* Den tekst der lige under billedet, beskriver hvad det er */
+.billede-beskrivelse{
+  margin-top: auto;
+  color:#CB9771;
+  display: block;
+}
+
+/* knapper man kan trykke på under billede beskrivelsen ved portfolien*/
+.button{
+    display: inline-block;
+  color: #CB9771;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.button:hover,
+.button:focus {
+  color: #A57048;
+
+
+/* Footer collum, stilen  */
+.collum {
+  color: #CB9771;
+  font-size: 15px;
+  display: inline;
+  text-decoration: none
+}
+
+/* fjerner punktprikkerne i siden */
+div ul{
+  list-style-type: none;
+  overflow: hidden;
+}

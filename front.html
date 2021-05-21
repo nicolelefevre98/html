@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nicole le Fevre</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!-- Header er det øverste og viser baren og logoer. Det er her jeg tilføjer
+navigations knapper (nav li a) -->
+<header>
+  <div class="header-container">
+  <img src="img/logo.png" alt="logo.logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#kontakt-mig">Kontakt</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#om-mig">Om mig</a></li>
+        <li><a href="#om-mig" class="active">Hjem</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<!-- container gør at det ikke rører ude i siderne, styles i CSS. Derudover er denne
+section også her jeg har min overskrift, velkomst og paragraph (tekst) -->
+<section>
+    <div class="header-container">
+        <h1 class="overskrift">Velkommen</h1>
+    </div>
+      <h1 class="quote" id="om-mig">Never stop being creative</h1>
+    </div>
+    <div class="text-container">
+            <p> Om mig <br> Jeg hedder Nicole og jeg er 23 år - jeg er igang med uddannelsen
+              som multimediedesigner på UCL erhvervsakademi og professionshøjskole.
+              <br>Dette er min online portfolio hvor du kan se mit arbejde
+              og kontakte mig for et eventuelt samarbejde.
+              <br>Jeg specialiserer mig indenfor illustrationer, photoshop redigering, animationer og videoredigering.
+              Download mit CV for mere information. </p>
+              <button class="download">Download CV</button>
+    </div>
+</section>
+
+<div class="portfolio">
+  <div class="portfolio-tekst">
+    <p>Portfolio</p>
+    <p>Se mine forskellige projekter her.</p>
+  </div>
+</div>
+
+<div class="box-container">
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+
+
+  </div>
+</div>
+
+
+  <!-- portfolio billede 1 -->
+  <figure class="billede" id="portfolio">
+          <img src="img/animate.png" alt="portfolio billede">
+          <figcaption class="billede-beskrivelse">
+              <h2> Animation i adobe animate </h2>
+        <a href="animate.html" class="button button-accent button small">Se projekt</a>
+          </figcaption>
+  </figure>
+
+
+  <!-- portfolio billede 2 -->
+  <figure class="billede">
+        <img src="img/premierepro.png" alt="portfolio billede">
+        <figcaption class="billede-beskrivelse">
+            <h2> Premiere Pro video redigering </h2>
+      <a href="permierepro.html" class="button button-accent button small">Se projekt</a>
+    </figcaption>
+  </figure>
+
+
+  <!-- portfolio billede 3 -->
+  <figure class="billede">
+        <img src="img/photoshop.png" alt="portfolio billede">
+        <figcaption class="billede-beskrivelse">
+              <h2> Photoshop erfaring </h2>
+      <a href="photoshop.html" class="button button-accent button small">Se projekt</a>
+
+    </figcaption>
+  </figure>
+
+
+  <!-- portfolio billede 4 -->
+  <figure class="billede">
+        <img src="img/illustrator.png" alt="portfolio billede">
+        <figcaption class="billede-beskrivelse">
+              <h2> Adobe illustrator </h2>
+      <a href="illustrator.html" class="button button-accent button small">Se projekt</a>
+    </figcaption>
+  </figure>
+
+
+<!-- Det her er footer (det nederste på siden) det skal indeholde kontakt informationer
+og relevanter info som skal gå igen på alle sider. Der er lavet collums for at
+sætte kontakt i rammer -->
+<footer>
+    <div class="collum" id="kontakt-mig">
+      <h3><strong>
+        Kontakt mig
+      </strong></h3>
+    </div>
+
+    <div class="collum">
+      <ul>
+        <li>+45 51 78 15 33</li>
+        <li>nile28346@edu.ucl.dk</li>
+      </ul>
+    </div>
+</footer>
+
+
+</body>
+</html>
