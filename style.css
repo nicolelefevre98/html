@@ -224,6 +224,7 @@ h1{
   font-size: 15px;
   text-decoration: none;
   text-transform: uppercase;
+  transform: transition;
 }
 
 .box1 button a{
