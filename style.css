@@ -212,34 +212,37 @@ h1{
 }
 
 /* knappen der fører videre til næste html side med portfolio  */
-.box1 button,
-.box2 button,
-.box3 button{
-  width: 100px;
-  height: 30px;
-  background-color: #CB9771;
-  border: none;
-  border-radius: 10px;
-  display: inline-block;
-  font-size: 15px;
+
+.box1 p,
+.box2 p,
+.box3 p{
+  color: #CB9771;
+  font-size: 25px;
   text-decoration: none;
   text-transform: uppercase;
-  transform: transition;
+  line-height: 50px;
+  display: inline-block;
 }
 
-.box1 button a{
-  color:#1C1A1D;
+.box1 p:hover,
+.box1 p:focus {
+  color: #A57048;
 }
 
-/* KAN IKKE FÅ DEN TIL AT VIRKE  */
-.button a:hover,
-.button a:focus {
+.box2 p:hover,
+.box2 p:focus {
+  color: #A57048;
+}
+
+.box3 p:hover,
+.box3 p:focus {
   color: #A57048;
 }
 
 
-
-
+.linkbox {
+  text-decoration: none;
+}
 
 /* Kontakt mig  */
 .kontakt-mig p{
@@ -250,7 +253,7 @@ h1{
 }
 
 .kontakt-mig{
-  width: 100%
+  width: 100%;
   height: auto;
   background-image: url("img/contact.png");
   background-position: bottom;
@@ -273,7 +276,6 @@ footer{
 
 footer p{
   color: #CB9771;
-  font-family: poppins;
   line-height: 15px;
   font-size: 15px;
   width: auto;
