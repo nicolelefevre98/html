@@ -13,7 +13,7 @@ body {
   /* background-color: ##1C1A1D;*/
   font-family: "Poppins", sans-serif;
   text-align: center;
-  background-image: url(img/background.png);
+  background-image: url("img/background.jpg");
   background-color: #000000;
   height: 1000px;
   background-position: left;
@@ -24,7 +24,7 @@ body {
 /* Eget logo */
 .logo {
   display: block;
-  margin-top: auto;
+  margin: 40px;
   height: 150px;
   width: 260px;
   float: left;
@@ -120,8 +120,6 @@ nav a:focus {
 .text-container{
   width: 90%;
   margin: auto;
-  background-color: #CB9771;
-  border-radius: 100px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -129,7 +127,7 @@ nav a:focus {
 /* Paragraph tekst "om mig" */
 p{
   margin: auto;
-  color:#1C1A1D;
+  color:#CB9771;
   font-size: 20px;
   display: inline-block;
   text-align: center;
@@ -139,64 +137,177 @@ p{
 
 
 
-/* Knappen til at downloade mit CV */
-.text-container button{
-  width: 160px;
-  height: 40px;
-  border-radius: 8px;
-  font-size: 20px;
-  font-color: #A57048;
-  font-family: Poppins;
-  outline: none;
-  margin: 0px, 10px;
-}
-
+/* Knappen til at downloade mit CV
 .download{
-  background-color: #CB9771;
-  border: none;
-  position: fixed;
+}
+*/
+
+.download a{
+  color: #CB9771;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 50px;
+  display: inline-block;
 }
 
-.download:hover,
-.download:focus {
+.download a:hover,
+.download a:focus {
   color: #A57048;
 }
 
-.portfolio{
-  height: 600px;
-  background-color:
+
+
+
+/* Portfolio delen (med bokse) */
+.portfolio {
+  height: 650px;
+  background-color: #CB9771;
 }
 
-.box1,.box2,.box3{
-  width: 300px;
-  height: 500px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+.portfolio-text {
+    font-weight: bold;
+    color: #1C1A1D;
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+h1{
+  padding: 40px;
+  color: #1C1A1D;
 }
 
 .box-container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+.afsnit{
+  color: #A57048;
+  font-family: poppins;
+  font-size: 30px;
+}
+
+.box1,.box2,.box3{
+  width: 420px;
+  height: 470px;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  justify-content: space-between;
-  padding: 65px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .box1{
-  background-image: url("img/premierepro.png");
-  background-size: 100%;
+  background-image: url("img/portfolio1.jpg");
 }
 
 .box2{
-  background-image: url("img/photoshop.png");
-  background-size: 100%;
+  background-image: url("img/portfolio3.jpg");
 }
 
 .box3{
-  background-image: url("img/illustrator.png");
-  background-size: 100%;
+  background-image: url("img/portfolio2.jpg");
 }
 
-/* Alle billeder, så de alle er samme størrelse */
+/* knappen der fører videre til næste html side med portfolio  */
+.box1 button,
+.box2 button,
+.box3 button{
+  width: 100px;
+  height: 30px;
+  background-color: #CB9771;
+  border: none;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.box1 button a{
+  color:#1C1A1D;
+}
+
+/* KAN IKKE FÅ DEN TIL AT VIRKE  */
+.button a:hover,
+.button a:focus {
+  color: #A57048;
+}
+
+
+
+
+
+/* Kontakt mig  */
+.kontakt-mig p{
+  color: #1C1A1D;
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.kontakt-mig{
+  width: 100%
+  height: auto;
+  background-image: url("img/contact.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+/* Footer  */
+footer{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p{
+  color: #CB9771;
+  font-family: poppins;
+  line-height: 15px;
+  font-size: 15px;
+  width: auto;
+  text-align: center;
+}
+
+.sociale-medier a{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #CB9771;
+  margin: 20px 10px;
+  border-radius: 50%;
+}
+
+.sociale-medier{
+  display: flex;
+}
+
+.sociale-medier i{
+  color: #1C1A1D;
+}
+
+.sociale-medier a:hover{
+  background-color: #A57048;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  transition: all ease 0.5s;
+}
+
+
+
+
+/* Stil på portfolio browser */
 img{
   margin: 5em;
   max-width: 100%;
@@ -210,31 +321,4 @@ img{
   margin-top: auto;
   color:#CB9771;
   display: block;
-}
-
-/* knapper man kan trykke på under billede beskrivelsen ved portfolien*/
-.button{
-    display: inline-block;
-  color: #CB9771;
-  font-size: 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.button:hover,
-.button:focus {
-  color: #A57048;
-
-
-/* Footer collum, stilen  */
-.collum {
-  color: #CB9771;
-  font-size: 15px;
-  display: inline;
-  text-decoration: none
-}
-
-/* fjerner punktprikkerne i siden */
-div ul{
-  list-style-type: none;
-  overflow: hidden;
 }
