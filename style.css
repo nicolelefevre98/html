@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width 780px) {
-
-}
-
 body {
   margin: 0;
   /* background-color: ##1C1A1D;*/
@@ -20,18 +16,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* Responsive baggrundsbillede til tablet str. */
-@media (max-width: 780px){
-  body {
-    height: 700px;
-  }
-}
-/* Responsive baggrundsbillede til mobil str */
-@media (max-width: 500px){
-  body {
-    height: 500px;
-  }
-}
+
+
 
 /* Eget logo */
 .logo {
@@ -41,20 +27,8 @@ body {
   width: 260px;
   float: left;
 }
-/* Responsive logo til tablet str. */
-@media (max-width: 780px){
-  .logo {
-height: 100px;
-width: 160px;
-  }
-}
-/* Responsive logo til mobil str */
-@media (max-width: 500px){
-  .logo {
-height: 60px;
-width: 110px;
-  }
-}
+
+
 
 /* Header */
 /* Header er et semantisk tag. Margin er distancen, så hvis man sætter margin på 5 er der større mellemrum */
@@ -86,19 +60,6 @@ nav li{
   float: right;
 }
 
-@media (max-width: 780px){
-  nav li {
-    margin: 2px;
-    padding: 3px;
-  }
-}
-@media (max-width: 500px){
-  nav li {
-    margin: 1px;
-    padding: 0.5px;
-  }
-}
-
 
 /* nav a er stilen på knapperne i header, padding gør at området man kan klikke på omkring navigationen er større */
 nav a{
@@ -112,19 +73,6 @@ nav a{
   padding: 40px;
 }
 
-@media (max-width: 780px){
-  nav a{
-    font-size: 15px;
-    float: center;
-  }
-}
-
-@media (max-width: 500px){
-  nav a{
-    font-size: 10px;
-    float: center;
-  }
-}
 
 
 /* active er den side man befinder sig på, så den viser i navigationen hvor du er  */
@@ -148,20 +96,7 @@ nav a:focus {
   display: block;
   text-align: right;
 }
-/* Størrelsen på den viste skærm i overskrift (responsive) */
-@media (max-width: 780px){
-  .overskrift {
-    font-size: 35px;
-    float: right;
-  }
-}
 
-@media (max-width: 500px){
-  .overskrift {
-    font-size: 20px;
-    float: right;
-  }
-}
 
 
 
@@ -374,7 +309,7 @@ footer p{
 
 /* Stil på portfolio browser */
 img{
-  margin: 5em;
+  margin: 10px;;
   max-width: 100%;
   height: 50%;
   width: 50%;
@@ -386,4 +321,205 @@ img{
   margin-top: auto;
   color:#CB9771;
   display: block;
+}
+
+h2{
+  font-size: 30px;
+  text-align: center;
+}
+
+/*Responsiv tablet str*/
+@media (max-width: 768px){
+body {
+  background-image: none;
+}
+
+.logo {
+  height: 130px;
+  width: 190px;
+}
+
+.overskrift {
+  font-size: 40px;
+  float: right;
+}
+
+.quote{
+  font-size: 30px;
+  display: inline-flex;
+}
+
+nav ul{
+  margin: 10px;
+  padding: 10px;
+}
+
+nav li {
+  margin: 2px;
+  padding: 3px;
+}
+
+nav a{
+  font-size: 20px;
+  float: center;
+  padding: 0;
+}
+
+
+.text-container{
+  width: 100%;
+}
+
+p {
+  font-size: 25px;
+}
+
+.download a {
+  font-size: 25px;
+}
+
+.portfolio-text {
+  font-size: 25px;
+  line-height: 35px;
+}
+
+h1 {
+  padding: 20px;
+}
+
+.portfolio {
+  height: 350px;
+}
+
+.box1 p,.box2 p,.box3 p{
+  font-size: 20px;
+  text-transform: none;
+  line-height: normal;
+}
+
+.box1,.box2,.box3{
+  width: 200px;
+  height: 240px;
+}
+.kontakt-mig p{
+  font-size: 20px;
+  line-height: 35px;
+}
+
+h2{
+  display: block;
+  text-align: center;
+  padding: 8px;
+  font-size: 25px;
+}
+
+img {
+  margin: 15px;
+  height: 70%;
+  width: 70%;
+}
+
+iframe {
+  max-width: 100%;
+}
+}
+
+
+
+/*Responsiv mobil str*/
+@media (max-width: 480px){
+body {
+  background-image: none;
+}
+
+.logo {
+  height: 60px;
+  width: 100px;
+}
+
+.overskrift {
+  font-size: 20px;
+  float: right;
+}
+
+.quote{
+font-size: 16px;
+display: inline-flex;
+}
+
+nav ul{
+margin: 5px;
+  padding: 5px;
+}
+
+nav li {
+  margin: 1px;
+  padding: 0px;
+}
+
+nav a{
+  font-size: 10px;
+  float: center;
+  padding: 0px;
+}
+
+.text-container{
+  width: 100%
+}
+
+p{
+font-size: 15px;
+
+}
+
+.download a{
+  font-size: 20px;
+}
+
+.portfolio-text {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h1 {
+  padding: 20px;
+}
+
+.portfolio{
+  height: 250px;
+}
+
+.box1 p,.box2 p,.box3 p{
+  font-size: 10px;
+  text-transform: none;
+  line-height: normal;
+}
+
+.box1,.box2,.box3{
+  width: 100px;
+  height: 120px;
+}
+
+.kontakt-mig p{
+  font-size: 15px;
+  line-height: 30px;
+}
+
+h2 {
+  display: block;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+
+}
+
+img {
+  margin: 10px;
+  height: 70%;
+  width: 70%
+}
+
+iframe {
+  max-width: 100%;
+}
 }
