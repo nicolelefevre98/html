@@ -9,8 +9,6 @@
     <script src="https://kit.fontawesome.com/52957088ac.js" crossorigin="anonymous"></script>
 </head>
 
-
-
 <body>
 <!-- Header er det øverste og viser baren og logoer. Det er her jeg tilføjer
 navigations knapper (nav li a) -->
@@ -28,11 +26,8 @@ navigations knapper (nav li a) -->
   </div>
 </header>
 
-
-
-
-<!-- container gør at det ikke rører ude i siderne, styles i CSS. Derudover er denne
-section også her jeg har min overskrift, velkomst og paragraph (tekst) -->
+<!-- Denne section er her jeg har min overskrift, velkomst og paragraph (tekst)
+container gør at det ikke rører ude i siderne, styles i CSS. -->
 <section>
   <div class="header-container">
       <h1 class="overskrift">Velkommen</h1>
@@ -47,74 +42,59 @@ section også her jeg har min overskrift, velkomst og paragraph (tekst) -->
           <br>Jeg har en stor interesse for Videoredigering og foto, men tilbyder også Web/App design og grafiske illustrationer
           Download mit CV for mere information. </p>
   </div>
+  <!-- Knap til at downloade mit CV med target så den åbner i nyt vindue -->
+  <div class="download">
+    <a href="pages/CV.pdf" target=_"blank" download>Download CV</a>
+  </div>
 </section>
 
-<div class="download">
-  <a href="pages/CV.pdf" target=_"blank" download>Download CV</a>
-</div>
 
-
-
-<!-- portfolio -->
+<!-- Portfolio class til id i navigationen -->
 <div class="portfolio" id="portfolio">
-<!-- portfolio tekst -->
-  <div class="portfolio-tekst"><h1>Portfolio</h1>
-  </div>
+  <!-- portfolio tekst -->
+  <div class="portfolio-tekst"><h1>Portfolio</h1></div>
 
-<!-- Bokse som jeg ikke må kalde bokse -->
-<div class="box-container">
+    <!-- Bokse som jeg ikke må kalde bokse -->
+    <div class="box-container">
+      <!-- Boks 1 -->
+      <a href="photoshop.html" class="linkbox">
+        <div class="box1">
+          <p class="afsnit">Foto & Video</p>
+        </div>
+      </a>
 
-  <!-- Boks 1 -->
-<a href="photoshop.html" class="linkbox">
-  <div class="box1">
-      <p class="afsnit">Foto & Video</p>
-  </div>
-</a>
+      <!-- Boks 2 -->
+      <a href="web-app.html" class="linkbox">
+        <div class="box2">
+          <p class="afsnit">App & Webdesign</p>
+        </div>
+      </a>
 
-    <!-- Boks 2 -->
-<a href="web-app.html" class="linkbox">
-  <div class="box2">
-    <p class="afsnit">App & Webdesign</p>
+      <!-- Boks 3 -->
+      <a href="illustrator.html" class="linkbox">
+        <div class="box3">
+          <p class="afsnit">Illustrationer og logo</p>
+        </div>
+      </a>
   </div>
-</a>
-
-    <!-- Boks 3 -->
-<a href="illustrator.html" class="linkbox">
-  <div class="box3">
-    <p class="afsnit">Illustrationer og logo</p>
-  </div>
-</a>
 </div>
-</div>
-
-
-
 
 <!-- Kontakt mig -->
 <div class="kontakt-mig" id="kontakt-mig">
   <p>Kontakt mig for samarbejde: <br> +45 51 78 15 33 - nile28346@edu.ucl.dk </br> </p>
 </div>
 
-
-
-
-
-
 <!-- Det her er footer (det nederste på siden) det skal indeholde kontakt informationer
-og relevanter info som skal gå igen på alle sider. Der er lavet collums for at
-sætte kontakt i rammer -->
+og relevanter info som skal gå igen på alle sider. -->
 <footer>
   <!-- links i footeren til sociale medier -->
-<div class="sociale-medier">
-  <a href="https://www.facebook.com/nicole.lefevre.98/" target=_"blank"><i class="fab fa-facebook"></i></a>
-  <a href="https://www.linkedin.com/in/nicole-le-fevre-10b576150/" target=_"blank"><i class="fab fa-linkedin"></i></a>
-  <a href="https://www.instagram.com/nicolelefevre/" target=_"blank"><i class="fab fa-instagram"></i></a>
-</div>
-
-<!-- Copyright så besøgende ved hvem der ejer siden -->
-  <p>Copyright - Nicole le Fevre 2021</p>
+  <div class="sociale-medier">
+    <a href="https://www.facebook.com/nicole.lefevre.98/" target=_"blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.linkedin.com/in/nicole-le-fevre-10b576150/" target=_"blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/nicolelefevre/" target=_"blank"><i class="fab fa-instagram"></i></a>
+  </div>
+      <!-- Copyright så besøgende ved hvem der ejer siden -->
+      <p>Copyright - Nicole le Fevre 2021</p>
 </footer>
-
-
 </body>
 </html>

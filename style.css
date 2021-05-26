@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap');
 
-*{
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   /* background-color: ##1C1A1D;*/
@@ -28,9 +24,6 @@ body {
   float: left;
 }
 
-
-
-/* Header */
 /* Header er et semantisk tag. Margin er distancen, så hvis man sætter margin på 5 er der større mellemrum */
 header {
   position: absolute;
@@ -42,8 +35,6 @@ header {
   margin: auto;
 }
 
-
-
 /* navigation liste øverst, Padding - Clears an area around the content. The padding is transparent  */
 nav ul{
   overflow: hidden;
@@ -52,14 +43,12 @@ nav ul{
   list-style: none;
 }
 
-
 /* nav li er stilen i headeren. feks størrelsen og float gør at teksten er højre stillet */
 nav li{
   margin: auto;
   padding: 5px;
   float: right;
 }
-
 
 /* nav a er stilen på knapperne i header, padding gør at området man kan klikke på omkring navigationen er større */
 nav a{
@@ -73,8 +62,6 @@ nav a{
   padding: 40px;
 }
 
-
-
 /* active er den side man befinder sig på, så den viser i navigationen hvor du er  */
 .active{
   font-weight: bold;
@@ -86,7 +73,6 @@ nav a:hover,
 nav a:focus {
   color: #A57048;
 }
-
 
 /* Typografi */
 .overskrift{
@@ -100,6 +86,7 @@ nav a:focus {
 
 
 
+
 /* Velkommen til min online portfolio */
 .quote{
   margin: auto;
@@ -109,8 +96,6 @@ nav a:focus {
   text-align: center;
   padding: 4.5em;
 }
-
-
 
 /* Container til paragraf delen*/
 .text-container{
@@ -131,13 +116,7 @@ p{
   padding: 3em;
 }
 
-
-
-/* Knappen til at downloade mit CV
-.download{
-}
-*/
-
+/* Knappen til at downloade mit CV*/
 .download a{
   color: #CB9771;
   font-size: 25px;
@@ -151,6 +130,8 @@ p{
 .download a:focus {
   color: #A57048;
 }
+
+
 
 
 
@@ -208,7 +189,6 @@ h1{
 }
 
 /* knappen der fører videre til næste html side med portfolio  */
-
 .box1 p,
 .box2 p,
 .box3 p{
@@ -239,6 +219,10 @@ h1{
 .linkbox {
   text-decoration: none;
 }
+
+
+
+
 
 /* Kontakt mig  */
 .kontakt-mig p{
@@ -307,7 +291,8 @@ footer p{
 
 
 
-/* Stil på portfolio browser */
+
+/* Stil på portfolio i de ekstra html sider */
 img{
   margin: 10px;;
   max-width: 100%;
@@ -327,6 +312,10 @@ h2{
   font-size: 30px;
   text-align: center;
 }
+
+
+
+
 
 /*Responsiv tablet str*/
 @media (max-width: 768px){
@@ -423,6 +412,8 @@ iframe {
   max-width: 100%;
 }
 }
+
+
 
 
 
